@@ -1,0 +1,294 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body */
+body {
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+/* Navbar */
+nav {
+    background-color: #333;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #0077cc;
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* Social Media Icons */
+nav ul li .social-icons {
+    display: inline-block;
+}
+
+nav ul li .social-icons a {
+    color: white;
+    padding: 10px;
+    margin: 0 5px;
+    transition: color 0.3s;
+}
+
+nav ul li .social-icons a:hover {
+    color: #00cdac;
+}
+
+/* Hero Section */
+#hero {
+    background: linear-gradient(to right, #0077cc, #ff9800);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#hero h1 {
+    font-size: 50px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.hero-text {
+    margin-top: 20px;
+}
+
+.hero-intro {
+    font-size: 40px;
+    color: white;
+}
+
+.hero-subtitle {
+    font-size: 19.2px;
+    color: white;
+}
+
+/* About Section with Gradient */
+#about {
+    background: linear-gradient(135deg, #00c9ff, #92fe9d);
+    padding: 120px 0;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 36px;
+    color: #222222;
+}
+
+#about p {
+    font-size: 18px;
+    margin: 20px 0;
+    color: #34495e;
+}
+
+.skills {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color:  #001f3f;
+    color: #ffd700;
+    border-radius: 20px;
+}
+
+.skills li i {
+    margin-right: 10px;
+}
+
+/* Projects Section */
+#projects {
+    background: linear-gradient(135deg, #00c9ff, #92fe9d);
+    padding: 100px 0;
+    text-align: center;
+}
+
+#projects h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.project-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    display: inline-block;
+    width: 300px;
+}
+
+.project-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-size: 16px;
+    color: #666;
+}
+
+.project-card a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.project-card a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Experience Section */
+#experience {
+    background-color: #eee;
+    padding: 100px 0;
+    text-align: center;
+}
+
+#experience h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.job {
+    background-color: #dcdcdc;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    width: 80%;
+    margin: 0 auto 20px;
+}
+
+.job h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.job p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #080808;
+    padding: 100px 0;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 36px;
+    color: #f4f4f4;
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form button {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+.contact-email {
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #262626;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    #hero h1 {
+        font-size: 36px;
+    }
+
+    #hero .btn {
+        font-size: 16px;
+    }
+
+    #about, #projects, #experience, #contact {
+        padding: 50px 0;
+    }
+
+    .project-card {
+        width: 100%;
+    }
+
+    .job {
+        width: 100%;
+    }
+}
